@@ -1,0 +1,2 @@
+import type { VercelRequest,VercelResponse } from '@vercel/node'; import { and,eq,isNull } from 'drizzle-orm'; import { db } from '../../lib/db'; import { devices } from '../../lib/schema'; import { json,requireUser } from '../../lib/http';
+export default async function handler(req:VercelRequest,res:VercelResponse){if(req.method!=='GET')return json(res,405,{error:'Method not allowed'});const u=await requireUser(req,res);if(!u)return;return json(res,200,{devices:await db.select().from(devices).where(and(eq(devices.ownerId,u.userId),isNull(devices.revokedAt)))});}
