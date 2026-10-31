@@ -4,6 +4,6 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {"dev":"vite --host 0.0.0.0", "build":"tsc -b && vite build", "preview":"vite preview"},
-  "dependencies": {"@libsql/client":"^0.15.15", "@livekit/components-react":"^2.9.9", "@livekit/components-styles":"^1.1.6", "@livekit/server-sdk":"^2.9.7", "@livekit/client":"^2.9.7", "argon2":"^0.41.1", "drizzle-orm":"^0.44.5", "lucide-react":"^0.468.0", "react":"^19.1.1", "react-dom":"^19.1.1"},
+  "dependencies": {"@libsql/client":"^0.15.15", "@livekit/components-react":"^2.9.9", "@livekit/components-styles":"^1.1.6", "@livekit/server-sdk":"^2.9.7", "livekit-client":"^2.9.7", "argon2":"^0.41.1", "drizzle-orm":"^0.44.5", "lucide-react":"^0.468.0", "react":"^19.1.1", "react-dom":"^19.1.1"},
   "devDependencies": {"@types/node":"^22.15.30", "@types/react":"^19.1.8", "@types/react-dom":"^19.1.7", "@vercel/node":"^5.3.3", "@vitejs/plugin-react":"^4.7.0", "drizzle-kit":"^0.31.4", "typescript":"~5.8.3", "vite":"^6.3.5"}
 }
