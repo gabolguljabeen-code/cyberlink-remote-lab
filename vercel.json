@@ -1,1 +1,1 @@
-{"framework":"vite","buildCommand":"npm run build","outputDirectory":"dist","functions":{"api/**/*.ts":{"includeFiles":"lib/**/*.js"}}}
+{"framework":"vite","buildCommand":"npm run build","outputDirectory":"dist","functions":{"api/**/*.ts":{"includeFiles":"**/*.sql"}}}
