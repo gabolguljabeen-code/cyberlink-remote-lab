@@ -11,7 +11,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return json(res, 503, { ok: false, check: 'configuration', message: 'Turso environment variables are missing for this deployment.' });
   }
   try {
-    const { db } = await import('../lib/db');
+    const { db } = await import('../lib/db.js');
     const result = await db.execute("SELECT name FROM sqlite_master WHERE type='table'");
     const present = new Set(result.rows.map(row => String(row.name)));
     const missingTables = requiredTables.filter(table => !present.has(table));

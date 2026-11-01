@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { createHash, randomBytes } from 'node:crypto';
 import { and, eq, gt, isNull } from 'drizzle-orm';
-import { db } from './db';
-import { authSessions } from './schema';
+import { db } from './db.js';
+import { authSessions } from './schema.js';
 
 export const hash = (v:string) => createHash('sha256').update(v).digest('hex');
 export const id = () => randomBytes(16).toString('hex');
