@@ -6,3 +6,5 @@
 .modal input{width:100%;height:37px;margin:0 0 13px;background:#111213;border:1px solid #343637;border-radius:4px;padding:0 9px;color:#ddd;font:11px 'DM Sans';outline:none}.modal input:focus{border-color:#b77349}.modal-submit:disabled{opacity:.6;cursor:wait}.auth-switch{margin:12px auto 0}.invite-code{margin-top:13px;padding:11px;border:1px solid #41352e;background:#211b17;border-radius:5px;display:flex;flex-direction:column;gap:6px}.invite-code small{font-size:8px;letter-spacing:.5px;color:#bba28e}.invite-code code{font:12px monospace;word-break:break-all;color:#f1b58f}.form-error{margin-top:10px;font-size:10px;color:#ff9c8e}
 
 .guest-note{display:block;text-align:center;margin-top:8px;color:#858687;font-size:9px}.guest-switch{font-size:10px}.guest-switch:disabled{opacity:.6;cursor:wait}
+
+.invite-link{color:#f1b58f;font:11px monospace;overflow-wrap:anywhere;text-decoration:underline}.copy-invite{align-self:flex-start;display:flex;align-items:center;gap:6px;border:1px solid #59402f;border-radius:4px;background:#2b211b;color:#f0a06e;padding:7px 9px;font:600 9px 'DM Sans';cursor:pointer}.copy-invite:hover{background:#38291f}
